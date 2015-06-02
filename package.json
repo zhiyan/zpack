@@ -9,6 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
+  "bin" : {
+    "zpack" : "./bin/zpack"
+    },
   "configFile": "zpack.config.json",
   "dependencies": {
     "babel-core": "^5.4.7",
