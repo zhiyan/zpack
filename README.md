@@ -29,6 +29,7 @@ ZPACK
 
     {
         "name" : "test" ,         // 组件名称
+        "es6" : true, //是否使用es6，默认false
 
         // 将要导出至 `prd` 和 `dev` 目录的文件列表
         // 其中所有路径, 均相对于 `src` 目录
