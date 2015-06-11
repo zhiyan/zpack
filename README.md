@@ -25,7 +25,21 @@ ZPACK
 
     zpack {命令名}
 
-### zpack.config.json
+
+#### 特点
+* js/css打包压缩混淆自动化
+* 模块化: commonJS模块方案
+* js模板引擎的支持：mustach(hogan)/handlebars
+* css支持sass/less/stylus预编译器
+* 支持ES6(Babel处理),可直接在代码里用es6，自动转为es5兼容
+* 支持同步(sync)代码到服务器/开发机
+* 支持图片自动压缩优化
+* 本地代码修改watch监听功能
+* 本地开启server服务器，自动替换线上代码功能
+* webpack支持，可配置将js/css打包为一个文件
+* js/css版本号支持
+
+### 配置文件 zpack.config.json
 
     {
         "name" : "test" ,         // 组件名称
@@ -64,17 +78,20 @@ ZPACK
 
 * SCSS/SASS
 * Less
+* Stylus
 
 ### 基本命令
 
 * init: '初始化项目',
 * pack: '打包代码',
 * min: '压缩混淆代码',
+* img: '图片目录压缩',
+* watch : '监视代码修改',
 * sync: '同步代码到开发机',
 * server: '本地调试服务器'
 
 ### stylesheet的三种模式
 
 * zpack.config.json中exports写入，单独导出文件
-* js文件中 `require("a.scss")` 会将js和css混编入一个js文件，适合spa
+* js文件中 `require("a.scss")` 会将js和css混编入一个js文件，适合SPA
 * js文件中引入，但在zpack.config.json中配置了separate:false，会跟js文件分离，单独写入与js文件名相同的css文件中
