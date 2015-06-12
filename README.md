@@ -55,12 +55,6 @@ ZPACK
             {
                 "path" : "./styles/page.scss" , 
                 "noversion" : true
-            } ,
-
-            // js中require的css分离到单独文件, 默认合并
-            {
-                "path" : "./scripts/page.js" , 
-                "separate" : true
             }
             
         ] ,
@@ -73,6 +67,8 @@ ZPACK
 
 * Handlebars
 * Mustache
+* strintg
+* html
 
 ### 支持的样式引擎
 
@@ -90,8 +86,7 @@ ZPACK
 * sync: '同步代码到开发机',
 * server: '本地调试服务器'
 
-### stylesheet的三种模式
+### stylesheet的两种模式
 
 * zpack.config.json中exports写入，单独导出文件
 * js文件中 `require("a.scss")` 会将js和css混编入一个js文件，适合SPA
-* js文件中引入，但在zpack.config.json中配置了separate:false，会跟js文件分离，单独写入与js文件名相同的css文件中
