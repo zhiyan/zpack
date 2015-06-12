@@ -25,7 +25,6 @@
     "gulp": "^3.8.11",
     "gulp-imagemin": "^2.2.1",
     "gulp-less": "^3.0.3",
-    "gulp-nop": "0.0.3",
     "gulp-rev": "^4.0.0",
     "gulp-sass": "^2.0.1",
     "gulp-webpack": "^1.4.0",
