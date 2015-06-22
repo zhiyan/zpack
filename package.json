@@ -1,6 +1,6 @@
 {
   "name": "zpack",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "前端自动化工具，动态打包，编译",
   "repository": "zhiyan/zpack",
   "author": "",
